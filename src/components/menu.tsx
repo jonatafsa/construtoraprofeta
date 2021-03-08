@@ -8,7 +8,7 @@ export const Menu = () => {
       <header className={styles.header}>
         <a href="" className={styles.logo}>Construtora Profeta</a>
         <input className={styles.menuBtn} type="checkbox" id={styles.menuBtn} />
-        <label className={styles.menuIcon} for={styles.menuBtn}><span className={styles.navicon}></span></label>
+        <label className={styles.menuIcon} htmlFor={styles.menuBtn}><span className={styles.navicon}></span></label>
         <ul className={styles.menu}>
           <li><Link href="/">Início</Link></li>
           <li><Link href="/about">Sobre</Link></li>
