@@ -1,0 +1,89 @@
+
+  .content {
+    padding-top: 8rem;
+    width: 100vw;
+    background: var(--white);
+  }
+  
+  .content h1 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .content h4 {
+    
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+    padding: 3rem 12rem;
+  }
+
+.about {
+    width: 100vw;
+    background: var(--white);
+    padding: 3rem;
+    padding-bottom: 8rem;
+  
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about .flags {
+    max-width: 1100px;
+    width: 100%;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .about .flags .flagInformation {
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about .flags .flagInformation span {
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .about .flags .flagInformation p {
+    font-size: 0.9rem;
+  }
+  
+  .about .flags .flagInformation img {
+    width: 28%;
+    padding-bottom: 1.5rem;
+  }
+
+  @media (max-width: 600px) {
+    .content h4 {
+      padding: 3rem 3rem;
+    }
+
+    .about .flags {
+      width: 100%;
+    
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      gap: 4rem;
+    }
+  
+    .about .flags .flagInformation {
+      width: 100%;
+  
+      flex-direction: column;
+    }
+  
+  }
+
+  

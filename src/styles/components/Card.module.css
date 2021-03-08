@@ -1,0 +1,56 @@
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    cursor: pointer;
+    height: auto;
+    margin: 20px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0.025);
+    text-align: center;
+    transition: transform .2s;
+    width: 20%;
+  }
+
+
+.card:hover {
+  transition: transform .2s;
+  transform: scale(1.1)
+}
+
+.card img {
+  padding: 1rem;
+  width: 40%;
+}
+
+  @media (max-width: 767px) {
+    .card {
+      width: 80%;
+    }
+  }
+  .card.expanded {
+    height: auto;
+  }
+
+  .text {
+    clip-path: polygon(0% 100%, 0 -90%, 50% -5%, 100% -90%, 100% 100%);
+    -webkit-clip-path: polygon(0% 100%, 0 -90%, 50% -5%, 100% -90%, 100% 100%);
+    transition: clip-path 1000ms;
+  }
+
+  .textContent {
+    transform: translateY(0px);
+    transition: transform 1000ms;
+  }
+
+  .title {
+    color: var(--red);
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 20px 0 0;
+  }
+  .bodyText {
+    font-size: 0.9rem;
+    padding: 20px 20px;
+  }

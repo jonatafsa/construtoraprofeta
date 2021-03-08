@@ -1,0 +1,95 @@
+.content {
+  width: 100vw;
+  background: var(--white);
+}
+
+.content h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.content h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: italic;
+  padding: 3rem 12rem;
+}
+
+.challends {
+  width: 100vw;
+  padding: 7rem;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.challends .cards {
+  width: 100%;
+  max-width: 1200px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.messageSection {
+  width: 100vw;
+  height: 200px;
+  color: var(--white);
+  background: var(--red);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.messageSection p {
+  width: 45%;
+}
+
+.messageSection button {
+  background: var(--green);
+  color: var(--white);
+  border: 0;
+  padding: 0.5rem;  
+  border-radius: 5px;
+
+  width: 15rem;
+  height: 3rem;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  transition: transform 0.5s, background 0.5s, color 0.5s;
+}
+
+.messageSection button:hover {
+  transform: scale(1.1);
+  background: rgb(51, 255, 0);
+  color: var(--text);
+
+  transition: transform 0.5s, background 0.5s, color 0.5s;
+}
+
+.messageSection button img {
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .content h4 {
+    padding: 3rem 3rem;
+  }
+  .messageSection {
+    flex-direction: column;
+  }
+  .messageSection p {
+    width: 85%;
+  }
+}
